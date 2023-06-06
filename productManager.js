@@ -102,23 +102,23 @@ const filePath = 'productos.json';
 const verifyProduct = new ProductManager(filePath);
 
 verifyProduct.addProduct({
-  title: 'Producto 1',
-  description: 'Descripción del Producto 1',
-  price: 10.99,
+  title: 'Samsung Z flip',
+  description: 'Celular Samsung Z Flip ',
+  price: 450000,
   thumbnail: 'ruta/imagen1.jpg',
   code: 'PROD001',
   stock: 5,
 });
 
 verifyProduct.addProduct({
-  title: 'Producto 2',
-  description: 'Descripción del Producto 2',
-  price: 15.99,
+  title: 'Motorola Rzer ultra',
+  description: 'Celular motorola Plegable',
+  price: 420000,
   thumbnail: 'ruta/imagen2.jpg',
   code: 'PROD002',
   stock: 3,
 });
 
-manager.updateProduct(1, { price: 12.99, stock: 10 });
+verifyProduct.updateProduct(1, { price: 430000, stock: 10 });
 
-manager.deleteProduct(2);
+verifyProduct.deleteProduct(2);
