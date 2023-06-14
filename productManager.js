@@ -7,6 +7,8 @@ class ProductManager {
     this.path = filePath;
     this.loadProducts();
   }
+   
+
 
   loadProducts() {
     try {
@@ -119,6 +121,20 @@ verifyProduct.addProduct({
   stock: 3,
 });
 
+
+verifyProduct.addProduct({
+  title: 'Iphone 1',
+  description: 'iphone 14 pro',
+  price : 550000,
+  thumbnail: 'ruta/imagen2.jpg',
+  code: 'PROD003',
+  stock: 5,
+}); 
+
+
+
 verifyProduct.updateProduct(1, { price: 430000, stock: 10 });
 
 verifyProduct.deleteProduct(2);
+
+module.exports = ProductManager; 
